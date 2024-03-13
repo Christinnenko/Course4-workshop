@@ -4,6 +4,11 @@
 @import "mobile";
 @import "tablet";
 
+html,
+body {
+  background-color: #191b1c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +28,9 @@ a {
   .center {
     padding: 0 calc(50% - 600px);
   }
+}
+.background-color {
+  background-color: #191b1c;
 }
 
 .head-background-main {
@@ -74,12 +82,12 @@ a {
     }
 
     &:hover {
-      background-color: #fff;
+      background-color: #151717;
       transition: 0.3s;
     }
 
     &:focus {
-      background-color: #fff;
+      background-color: #151717;
     }
 
     &:hover::placeholder {
@@ -425,8 +433,7 @@ a {
     line-height: 18px;
     font-family: $font;
     transition: background-color 0.2s;
-    color: #fff;
-
+    color-scheme: dark !important;
     &:hover {
       background-color: #888888;
     }
